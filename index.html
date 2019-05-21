@@ -8,10 +8,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js"></script>
 	<link rel="stylesheet" href="./reset.css">
 	<style>
+		body{
+			font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+		}
 		.commonWidth{
 			width:704px;
 			margin:0 auto;
-			background: #00FFff10; /* 底色检查 */
+			/* background: #00FFff10; 底色检查 */
 		}
 		.header{
 			/* flex布局开始 */
@@ -19,48 +22,91 @@
 			flex-direction:row;
 			justify-content:space-between;
 			align-items:center;
-			background: #ff00ff10; /* 底色检查 */
+			height: 96px;
+			/* background: #ff00ff10;  */
 			/* flex布局结束 */
 		}
 		.logo{
 			width:64px;
 			height:64px;
+			margin-left: 20px;
 		}
 		.color_tovi_brand{
 			fill: #333;
 		}
+		.header nav{
+			font-size: 18px;
+			font-weight: 500;
+			margin-right: 40px
+		}
+
+		.header nav a{
+				margin: 0 16px;
+		}
 		.top .name{
+			font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			line-height: 1;
+			text-transform: uppercase;
+			word-wrap: break-word;
 			font-size:60px;
-			font-weight:600;
-			background: #ff00ff10; /* 底色检查 */
+			margin-top: 12px;
 		}
 		.top .intro{
 			color:rgba(0, 0, 0, 0.35);
 			font-size:16px;
 			width:344px;
+			margin-top:16px;
 		}
 		.articles{
 			/* flex布局开始 */
 			display:flex;
 			flex-direction:row;
+			margin-top:40px;
+			/* background: #ffff0010;  */
 
 			/* flex布局结束 */
 		}
 		.articles li{
 			list-style:none;
+			width:488px;
+			/* background: #ff00ff10;  */
+			margin-bottom:16px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 26px;
+			color: #000000;
+
 		}
 		.articles li a{
 			font-size:18px;
+			text-decoration-line: underline;
 		}
+		.articles li a:hover{
+			color: #001AFF;
+			text-decoration-line: underline;
+		}
+
+
 		.articles .data{
 			display:block;
 			font-size:12px;
+			/* margin-bottom: 8px; */
+			color:rgba(0, 0, 0, 0.35);
+
 			
 		}
 		.articles .year{
+			width: 200px;
 			font-size:60px;
 			color:#EFEFEF;
-		}
+			font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			line-height: 1;
+			text-transform: uppercase;
+			word-wrap: break-word;
+			font-size:60px;
+			margin-right: 16px;
+					}
 	</style>
 	</head>
 	
@@ -68,12 +114,12 @@
     <!-- 导航和logo部分 -->
 	<header class="header">
 		<!-- logo -->
-		<img src="./images/logo-tovizhong.png" class="logo">
-		<!-- <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
+		<!-- <img src="./images/logo-tovizhong.png" class="logo"> -->
+		<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M170.667 21.3333L42.6667 64V192L85.3334 234.667L213.333 192V64L170.667 21.3333ZM138.667 53.3333L74.6667 74.6667V96L96 88.8889L96 152.889L117.333 145.778L117.333 81.7778L138.667 74.6667V53.3333Z"  class="color_tovi_brand"/>
 			<path d="M213.333 64L170.667 21.3333V149.333L213.333 192V64Z" fill="black" fill-opacity="0.2" style="mix-blend-mode:multiply"/>
 			<path d="M85.3334 234.667L42.6667 192L170.667 149.333L213.333 192L85.3334 234.667Z" fill="black" fill-opacity="0.4" style="mix-blend-mode:multiply"/>
-		</svg> -->
+		</svg>
 		<!-- nav -->
 		<nav>
 			<a href="#">博客</a>
@@ -92,12 +138,13 @@
 		<p class="year">2018</p>
 		<ul>		
 			<li>
-					<span class="data">02.23 / #翻译</span>
-					<a href="#">设计师和前端工程师合作，提高质量和效率的5个规则</a>
-				<li>
-						<span class="data">02.08 / #翻译</span>
-						<a href="#">严肃的产品不必设计的那么严肃</a>
-				</li>			
+				<span class="data">02.23 / #翻译</span>
+				<a href="#">设计师和前端工程师合作，提高质量和效率的5个规则设计师和前端工程师合作，提高质量和效率的5个规则</a>
+			</li>
+			<li>
+					<span class="data">02.08 / #翻译</span>
+					<a href="#">严肃的产品不必设计的那么严肃</a>
+			</li>			
 		</ul>
 	</section>
 	<section class="commonWidth articles">
@@ -111,6 +158,24 @@
 				<span class="data">09.10 / #翻译</span>
 				<a href="#">用户体验设计流程</a>
 			</li>
+			<li>
+				<span class="data">09.10 / #翻译</span>
+				<a href="#">用户体验设计流程</a>
+			</li>
+			<li>
+					<span class="data">12.14 / #翻译</span>
+					<a href="#">时间就是金钱：Figma如何加速我们的工作流程的</a>
+			</li>			
+			<li>
+				<span class="data">09.10 / #翻译</span>
+				<a href="#">用户体验设计流程</a>
+			</li>
+			<li>
+				<span class="data">09.10 / #翻译</span>
+				<a href="#">用户体验设计流程</a>
+			</li>
+
+
 		</ul>
 	</section>
 
