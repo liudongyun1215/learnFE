@@ -1,0 +1,33 @@
+.header{
+    /* flex布局开始 */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height: 96px;
+    /* flex布局结束 */
+}
+.logo{
+    width:64px;
+    height:64px;
+    margin-left: 16px;
+}
+.color_tovi_brand{
+    fill: #333;
+}
+.header nav{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px
+}
+.header nav a{
+        padding: 8px 0px;
+        margin:  0px 10px;
+}
+.current{
+    color: #001AFF;
+    border-bottom: 2px #001AFF solid;
+}
+nav a:hover{
+    color:#001AFF;
+}

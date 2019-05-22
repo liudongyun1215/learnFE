@@ -5,104 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
     <title>tovi</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js"></script>
-	<link rel="stylesheet" href="./reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Biryani:900&display=swap" rel="stylesheet">
-	<style>
-		.header{
-			/* flex布局开始 */
-			display:flex;
-			flex-direction:row;
-			justify-content:space-between;
-			align-items:center;
-			height: 96px;
-			/* background: #ff00ff10;  */
-			/* flex布局结束 */
-		}
-		.logo{
-			width:64px;
-			height:64px;
-			margin-left: 20px;
-		}
-		.color_tovi_brand{
-			fill: #333;
-		}
-		.header nav{
-			font-size: 18px;
-			font-weight: 500;
-			margin-right: 40px
-		}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js"></script>
+		<link rel="stylesheet" href="./reset.css">
+		<link rel="stylesheet" href="./common.css">
+		<link href="https://fonts.googleapis.com/css?family=Biryani:900&display=swap" rel="stylesheet">
+		<style>
 
-		.header nav a{
-				margin: 0 16px;
-		}
-		.top .name{
-			font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			.top .name{
+				font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				line-height: 1.2;
+				text-transform: uppercase;
+				word-wrap: break-word;
+				font-size:60px;
+				margin-top: 12px;
+			}
+			.top .intro{
+				color:rgba(0, 0, 0, 0.35);
+				font-size:16px;
+				width:344px;
+				margin-top:16px;
+			}
+			.articles{
+				/* flex布局开始 */
+				display:flex;
+				flex-direction:row;
+				margin-top:40px;
+				/* flex布局结束 */
+			}
+			.articles li{
+				list-style:none;
+				width:488px;
+				/* background: #ff00ff10;  */
+				margin-bottom:16px;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 26px;
+				color: #000000;
 
-			line-height: 1;
-			text-transform: uppercase;
-			word-wrap: break-word;
-			font-size:60px;
-			margin-top: 12px;
-		}
-		.top .intro{
-			color:rgba(0, 0, 0, 0.35);
-			font-size:16px;
-			width:344px;
-			margin-top:16px;
-		}
-		.articles{
-			/* flex布局开始 */
-			display:flex;
-			flex-direction:row;
-			margin-top:40px;
-			/* background: #ffff0010;  */
-
-			/* flex布局结束 */
-		}
-		.articles li{
-			list-style:none;
-			width:488px;
-			/* background: #ff00ff10;  */
-			margin-bottom:16px;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 18px;
-			line-height: 26px;
-			color: #000000;
-
-		}
-		.articles li a{
-			font-size:18px;
-			text-decoration-line: underline;
-		}
-		.articles li a:hover{
-			color: #001AFF;
-			text-decoration-line: underline;
-		}
-
-
-		.articles .data{
-			display:block;
-			font-size:12px;
-			/* margin-bottom: 8px; */
-			color:rgba(0, 0, 0, 0.35);
-
-			
-		}
-		.articles .year{
-			width: 200px;
-			font-size:60px;
-			color:#EFEFEF;
-			font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-			line-height: 1;
-			text-transform: uppercase;
-			word-wrap: break-word;
-			font-size:60px;
-			margin-right: 16px;
-			margin-top: 
-					}
-	</style>
+			}
+			.articles li a{
+				font-size:18px;
+				text-decoration-line: underline;
+			}
+			.articles li a:hover{
+				color: #001AFF;
+				text-decoration-line: underline;
+			}
+			.articles .data{
+				display:block;
+				font-size:12px;
+				/* margin-bottom: 8px; */
+				color:rgba(0, 0, 0, 0.35);
+			}
+			.articles .year{
+				width: 200px;
+				font-size:60px;
+				color:#EFEFEF;
+				font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				line-height: 1;
+				text-transform: uppercase;
+				word-wrap: break-word;
+				font-size:60px;
+				margin-right: 16px;
+				margin-top: 8px;
+			}
+		</style>
 	</head>
 	
   <body>
@@ -117,9 +85,9 @@
 		</svg>
 		<!-- nav -->
 		<nav>
-			<a href="#">博客</a>
-			<a href="#">作品集</a>
-			<a href="#">小项目</a>
+			<a href="#" class="current">博客</a>
+			<a href="./portfolio.html">作品集</a>
+			<a href="./sideprojects.html">小项目</a>
 			<a href="./about.html">关于我</a>
 		</nav>
 	</header>
@@ -173,8 +141,5 @@
 
 		</ul>
 	</section>
-
-
-
   </body>
 </html>
