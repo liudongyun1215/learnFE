@@ -1,3 +1,10 @@
+.commonWidth{
+	width:704px;
+	margin:0 auto;
+}
+.color_tovi_brand{
+    fill: #333;
+}
 .header{
     /* flex布局开始 */
     display:flex;
@@ -7,14 +14,37 @@
     height: 96px;
     /* flex布局结束 */
 }
-.logo{
+
+.header .logo{
     width:64px;
     height:64px;
     margin-left: 16px;
 }
-.color_tovi_brand{
-    fill: #333;
+
+footer{
+    /* flex布局开始 */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    height: 64px;
+    border-top: 1px solid #00000010;
+    font-size: 16px;
+    /* flex布局结束 */
 }
+
+footer .commonWidth{
+    margin-top: 96px;
+}
+footer .logo{
+    width:48px;
+    height: 48px;
+    margin: 0;
+}
+footer nav a{
+    margin-left: 16px;
+}
+
 .header nav{
     font-size: 18px;
     font-weight: 500;
@@ -31,3 +61,20 @@
 nav a:hover{
     color:#001AFF;
 }
+
+.top .name{
+    font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-size:60px;
+    margin-top: 12px;
+}
+.top .intro{
+    color:rgba(0, 0, 0, 0.35);
+    font-size:16px;
+    width:344px;
+    margin-top:0px;
+    line-height: 1.5;
+}
+

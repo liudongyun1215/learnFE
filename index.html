@@ -6,36 +6,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
     <title>tovi</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Biryani:900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Biryani:800|Noto+Sans+SC&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./reset.css">
 		<link rel="stylesheet" href="./common.css">
 		<style>
-			.top .name{
-				font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-				line-height: 1.2;
-				text-transform: uppercase;
-				word-wrap: break-word;
-				font-size:60px;
-				margin-top: 12px;
-			}
-			.top .intro{
-				color:rgba(0, 0, 0, 0.35);
-				font-size:16px;
-				width:344px;
-				margin-top:0px;
-				line-height: 1.5;
-			}
+			/* 文章相关的样式 */
+			body{
+      	background-color: white;
+  	  }	
 			.articles{
 				/* flex布局开始 */
 				display:flex;
 				flex-direction:row;
 				margin-top:40px;
+				margin-bottom:40px;
 				/* flex布局结束 */
 			}
 			.articles li{
 				list-style:none;
 				width:488px;
-				/* background: #ff00ff10;  */
 				margin-bottom:16px;
 				font-style: normal;
 				font-weight: 500;
@@ -72,70 +61,83 @@
 		</style>
 	</head>
   <body>
-    <!-- 导航和logo部分 -->
-	<header class="header">
-		<!-- logo -->
-		<!-- <img src="./images/logo-tovizhong.png" class="logo"> -->
-		<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
-			<path fill-rule="evenodd" clip-rule="evenodd" d="M170.667 21.3333L42.6667 64V192L85.3334 234.667L213.333 192V64L170.667 21.3333ZM138.667 53.3333L74.6667 74.6667V96L96 88.8889L96 152.889L117.333 145.778L117.333 81.7778L138.667 74.6667V53.3333Z"  class="color_tovi_brand"/>
-			<path d="M213.333 64L170.667 21.3333V149.333L213.333 192V64Z" fill="black" fill-opacity="0.2" style="mix-blend-mode:multiply"/>
-			<path d="M85.3334 234.667L42.6667 192L170.667 149.333L213.333 192L85.3334 234.667Z" fill="black" fill-opacity="0.4" style="mix-blend-mode:multiply"/>
-		</svg>
-		<!-- nav -->
-		<nav>
-			<a href="#" class="current">博客</a>
-			<a href="./portfolio.html">作品集</a>
-			<a href="./sideprojects.html">小项目</a>
-			<a href="./about.html">关于我</a>
-		</nav>
-	</header>
-	
-	<section class="top commonWidth">
-		<div class="name">TOVI'S<br/> BLOG</div>
-		<p class="intro">在互联网、设计、产品、文章翻译、自我发展和工作效率的一些想法</p>
-	</section>
-	
-	<section class="commonWidth articles">
-		<p class="year">2018</p>
-		<ul>		
-			<li>
-				<span class="data">02.23 / #翻译</span>
-				<a href="#">设计师和前端工程师合作，提高质量和效率的5个规则设计师和前端工程师合作，提高质量和效率的5个规则</a>
-			</li>
-			<li>
-					<span class="data">02.08 / #翻译</span>
-					<a href="#">严肃的产品不必设计的那么严肃</a>
-			</li>			
-		</ul>
-	</section>
-	<section class="commonWidth articles">
-		<p class="year">2017</p>
-		<ul>		
-			<li>
-					<span class="data">12.14 / #翻译</span>
-					<a href="#">时间就是金钱：Figma如何加速我们的工作流程的</a>
-			</li>			
-			<li>
-				<span class="data">09.10 / #翻译</span>
-				<a href="#">用户体验设计流程</a>
-			</li>
-			<li>
-				<span class="data">09.10 / #翻译</span>
-				<a href="#">用户体验设计流程</a>
-			</li>
-			<li>
-					<span class="data">12.14 / #翻译</span>
-					<a href="#">时间就是金钱：Figma如何加速我们的工作流程的</a>
-			</li>			
-			<li>
-				<span class="data">09.10 / #翻译</span>
-				<a href="#">用户体验设计流程</a>
-			</li>
-			<li>
-				<span class="data">09.10 / #翻译</span>
-				<a href="#">用户体验设计流程</a>
-			</li>
-		</ul>
-	</section>
+		<!-- 导航和logo部分 -->
+		<header class="header">
+			<!-- logo -->
+			<!-- <img src="./images/logo-tovizhong.png" class="logo"> -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M170.667 21.3333L42.6667 64V192L85.3334 234.667L213.333 192V64L170.667 21.3333ZM138.667 53.3333L74.6667 74.6667V96L96 88.8889L96 152.889L117.333 145.778L117.333 81.7778L138.667 74.6667V53.3333Z"  class="color_tovi_brand"/>
+				<path d="M213.333 64L170.667 21.3333V149.333L213.333 192V64Z" fill="black" fill-opacity="0.2" style="mix-blend-mode:multiply"/>
+				<path d="M85.3334 234.667L42.6667 192L170.667 149.333L213.333 192L85.3334 234.667Z" fill="black" fill-opacity="0.4" style="mix-blend-mode:multiply"/>
+			</svg>
+			<nav>
+				<a href="#" class="current">博客</a>
+				<a href="./portfolio.html">作品集</a>
+				<a href="./sideprojects.html">小项目</a>
+				<a href="./about.html">关于我</a>
+			</nav>
+		</header>
+		
+		<section class="top commonWidth">
+			<div class="name">TOVI'S<br/> BLOG</div>
+			<p class="intro">在设计、产品、文章翻译、自我发展和工作效率的一些想法</p>
+		</section>
+		
+		<!-- 2018年份 -->
+		<section class="commonWidth articles">
+			<p class="year">2018</p>
+			<ul>		
+				<li>
+					<span class="data">02.23 / #翻译</span>
+					<a href="#">设计师和前端工程师合作，提高质量和效率的5个规则设计师和前端工程师合作，提高质量和效率的5个规则</a>
+				</li>
+				<li>
+						<span class="data">02.08 / #翻译</span>
+						<a href="#">严肃的产品不必设计的那么严肃</a>
+				</li>			
+			</ul>
+		</section>
+		<!-- 2017年份 -->
+		<section class="commonWidth articles">
+			<p class="year">2017</p>
+			<ul>		
+				<li>
+						<span class="data">12.14 / #翻译</span>
+						<a href="#">时间就是金钱：Figma如何加速我们的工作流程的</a>
+				</li>			
+				<li>
+					<span class="data">09.10 / #翻译</span>
+					<a href="#">用户体验设计流程</a>
+				</li>
+				<li>
+					<span class="data">09.10 / #翻译</span>
+					<a href="#">用户体验设计流程</a>
+				</li>
+				<li>
+						<span class="data">12.14 / #翻译</span>
+						<a href="#">时间就是金钱：Figma如何加速我们的工作流程的</a>
+				</li>			
+				<li>
+					<span class="data">09.10 / #翻译</span>
+					<a href="#">用户体验设计流程</a>
+				</li>
+				<li>
+					<span class="data">09.10 / #翻译</span>
+					<a href="#">用户体验设计流程</a>
+				</li>
+			</ul>
+		</section>
+		<footer class="commonWidth">
+				<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M170.667 21.3333L42.6667 64V192L85.3334 234.667L213.333 192V64L170.667 21.3333ZM138.667 53.3333L74.6667 74.6667V96L96 88.8889L96 152.889L117.333 145.778L117.333 81.7778L138.667 74.6667V53.3333Z"  class="color_tovi_brand"/>
+					<path d="M213.333 64L170.667 21.3333V149.333L213.333 192V64Z" fill="black" fill-opacity="0.2" style="mix-blend-mode:multiply"/>
+					<path d="M85.3334 234.667L42.6667 192L170.667 149.333L213.333 192L85.3334 234.667Z" fill="black" fill-opacity="0.4" style="mix-blend-mode:multiply"/>
+				</svg>
+				<nav>
+					<a href="#">Twitter</a>
+					<a href="#">Github</a>
+					<a href="#">Mail</a>
+				</nav>
+			</header>
   </body>
 </html>
