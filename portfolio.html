@@ -16,12 +16,36 @@
       .top .subnav{
         color:rgba(0, 0, 0, 0.35);
         font-size:16px;
-        margin-top:0px;
+        margin-top:8px;
         line-height: 1.5;
       }
       .top .subnav a{
-        margin:0 8px;
+        margin:0 12px;
+        border-bottom: none;
       }
+
+      .year{
+				width: 200px;
+				font-size:60px;
+				color:white;
+				font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				line-height: 1;
+				text-transform: uppercase;
+				word-wrap: break-word;
+				font-size:60px;
+				margin-right: 16px;
+				margin-top: 60px;
+      }
+
+			.workGrid{
+				/* flex布局开始 */
+        display: flex;
+        justify-content: center;
+				margin-top:24px;
+				margin-bottom:80px;
+				/* flex布局结束 */
+			}
+
     </style>
 	</head>
   <body>
@@ -45,25 +69,42 @@
       <div class="name">Tovi's<br/>Works</div>
       <nav class="subnav">
         <a href="#" class="current">All</a>
-        <a href="#">AAA</a>
-        <a href="#">BBB</a>
-        <a href="#">CCC</a>
+        <a href="#">App Design</a>
+        <a href="#">Web Design</a>
+        <a href="#">Motion</a>
+        <a href="#">Icon</a>
       </nav>      
     </section>
 
-    <section class="commonWidth articles">
+    <section class="commonWidth">
       <p class="year">2018</p>
-      <ul>		
-        <li>
-          <span class="data">02.23 / #翻译</span>
-          <a href="#">设计师和前端工程师合作，提高质量和效率的5个规则设计师和前端工程师合作，提高质量和效率的5个规则</a>
-        </li>
-        <li>
-            <span class="data">02.08 / #翻译</span>
-            <a href="#">严肃的产品不必设计的那么严肃</a>
-        </li>			
-      </ul>
     </section>
+    <div class="workGrid">
+      <div class="workItem">
+        <p>
+          <img src="./_portfolio/thumbnail_works.png"><br>
+          <p>name</p>
+        </p>
+      </div>
+      <div class="workItem">
+        <p>
+          <img src="./_portfolio/thumbnail_works.png"><br>
+          <p>name</p>
+        </p>
+      </div>
+        <div class="workItem">
+          <p>
+            <img src="./_portfolio/thumbnail_works.png"><br>
+            <p>name</p>
+          </p>
+        </div>
+        <div class="workItem">
+          <p>
+            <img src="./_portfolio/thumbnail_works.png"><br>
+            <p>name</p>
+          </p>
+        </div>        
+    </div>
 
 
   </body>
