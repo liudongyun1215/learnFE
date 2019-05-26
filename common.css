@@ -1,10 +1,12 @@
-.commonWidth{
-	width:704px;
-	margin:0 auto;
-}
 .color_tovi_brand{
     fill: #333;
 }
+
+body .container{
+    padding-left: 20px;
+    padding-right:20px;
+}
+
 .header{
     /* flex布局开始 */
     display:flex;
@@ -12,13 +14,34 @@
     justify-content:space-between;
     align-items:center;
     height: 96px;
+    /* background-color: #00FF0010; */
     /* flex布局结束 */
 }
 
 .header .logo{
     width:64px;
     height:64px;
-    margin-left: 16px;
+    margin-left: -12px;
+}
+
+.header nav{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header nav a{
+        padding: 8px 0px;
+        margin:  0px 10px;
+        color: black;
+}
+
+nav a:hover{
+    color:#001AFF;
+}
+
+.header nav .current{
+    color: #001AFF;
+    border-bottom: 2px #001AFF solid;
 }
 
 footer{
@@ -30,36 +53,29 @@ footer{
     height: 64px;
     border-top: 1px solid #00000010;
     font-size: 16px;
+    margin: 0 15px;
+    padding: 0;
+    margin-top: 80px;
     /* flex布局结束 */
 }
 
-footer .commonWidth{
-    margin-top: 96px;
-}
 footer .logo{
-    width:48px;
-    height: 48px;
+    width:36px;
+    height: 36px;
     margin: 0;
-}
-footer nav a{
-    margin-left: 16px;
+    margin-left: -4px;
+    padding: 0;
 }
 
-.header nav{
-    font-size: 18px;
-    font-weight: 500;
-    margin-right: 20px
+footer nav a{
+    margin-left: 16px;
+    color: black
 }
-.header nav a{
-        padding: 8px 0px;
-        margin:  0px 10px;
-}
-.current{
-    color: #001AFF;
-    border-bottom: 2px #001AFF solid;
-}
-nav a:hover{
-    color:#001AFF;
+
+
+.top{
+    margin-top: 40px;
+    margin-bottom:40px;
 }
 
 .top .name{
@@ -68,13 +84,33 @@ nav a:hover{
     text-transform: uppercase;
     word-wrap: break-word;
     font-size:60px;
-    margin-top: 12px;
 }
+
 .top .intro{
     color:rgba(0, 0, 0, 0.35);
     font-size:16px;
-    width:344px;
-    margin-top:0px;
     line-height: 1.5;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.top .subnav{
+    font-size:16px;
+    line-height: 1.5;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.top .subnav a{
+    border-bottom: none;
+    color:rgba(0, 0, 0, 0.35);
+    margin-right: 12px;
+}
+
+.top .subnav a:hover{
+    color:#001AFF;
+}
+
+.top .subnav .current{
+    color: #001AFF;
 }
 

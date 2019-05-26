@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
-    <title>tovi</title>
+    <title>Tovi-Blog</title>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js"></script>
+		<!-- <link rel="stylesheet" href="./reset.css"> -->
+		<!-- <link rel="stylesheet" href="./normalize.css"> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Biryani:800|Noto+Sans+SC&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="./reset.css">
 		<link rel="stylesheet" href="./common.css">
 		<style>
 			/* 文章相关的样式 */
@@ -15,25 +17,24 @@
 				background-color: white;
 			}	
 			.articles{
-				/* flex布局开始 */
-				display:flex;
-				flex-direction:row;
-				margin-top:40px;
+				margin-top:24px;
 				margin-bottom:40px;
-				/* flex布局结束 */
+			}
+			.articles ul{
+				padding: 0;
 			}
 			.articles li{
 				list-style:none;
-				width:488px;
 				margin-bottom:16px;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 18px;
 				line-height: 26px;
-				color: #000000;
 			}
 			.articles li a{
 				font-size:18px;
+				text-decoration-line: underline;
+				color: black;
 				text-decoration-line: underline;
 			}
 			.articles li a:hover{
@@ -43,11 +44,9 @@
 			.articles .data{
 				display:block;
 				font-size:12px;
-				/* margin-bottom: 8px; */
 				color:rgba(0, 0, 0, 0.35);
 			}
 			.articles .year{
-				width: 200px;
 				font-size:60px;
 				color:#EFEFEF;
 				font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -55,12 +54,11 @@
 				text-transform: uppercase;
 				word-wrap: break-word;
 				font-size:60px;
-				margin-right: 16px;
 				margin-top: 8px;
 			}
 		</style>
 	</head>
-  <body>
+  <body class="container">
 		<!-- 导航和logo部分 -->
 		<header class="header">
 			<!-- logo -->
@@ -74,18 +72,23 @@
 				<a href="#" class="current">博客</a>
 				<a href="./portfolio.html">作品集</a>
 				<a href="./sideprojects.html">小项目</a>
-				<a href="./about.html">关于我</a>
+				<a href="./about.html">关于</a>
 			</nav>
 		</header>
-		
-		<section class="top commonWidth">
+		<div class="row">
+		<section class="top col-md-8 col-md-offset-2">
 			<div class="name">TOVI'S<br/> BLOG</div>
 			<p class="intro">在设计、产品、文章翻译、自我发展和工作效率的一些想法</p>
 		</section>
-		
+		</div>
 		<!-- 2018年份 -->
-		<section class="commonWidth articles">
-			<p class="year">2018</p>
+		<div class="row">
+		<section class="col-md-8 col-md-offset-2 articles">
+			<div class="row">
+			<div class="col-md-4">
+				<p class="year">2018</p>
+			</div>
+			<div class="col-md-8">
 			<ul>		
 				<li>
 					<span class="data">02.23 / #翻译</span>
@@ -96,48 +99,53 @@
 						<a href="#">严肃的产品不必设计的那么严肃</a>
 				</li>			
 			</ul>
+			</div>
+			</div>
 		</section>
+		</div>
 		<!-- 2017年份 -->
-		<section class="commonWidth articles">
-			<p class="year">2017</p>
+		<div class="row">
+		<section class="col-md-8 col-md-offset-2 articles">
+			<div class="row">
+			<div class="col-md-4">
+				<p class="year">2017</p>
+			</div>
+			<div class="col-md-8">
 			<ul>		
 				<li>
-						<span class="data">12.14 / #翻译</span>
-						<a href="#">时间就是金钱：Figma如何加速我们的工作流程的</a>
-				</li>			
-				<li>
-					<span class="data">09.10 / #翻译</span>
-					<a href="#">用户体验设计流程</a>
+					<span class="data">02.23 / #翻译</span>
+					<a href="#">设计师和前端工程师合作，提高质量和效率的5个规则设计师和前端工程师合作，提高质量和效率的5个规则</a>
 				</li>
 				<li>
-					<span class="data">09.10 / #翻译</span>
-					<a href="#">用户体验设计流程</a>
-				</li>
+						<span class="data">02.08 / #翻译</span>
+						<a href="#">严肃的产品不必设计的那么严肃</a>
+				</li>		
 				<li>
-						<span class="data">12.14 / #翻译</span>
-						<a href="#">时间就是金钱：Figma如何加速我们的工作流程的</a>
-				</li>			
+						<span class="data">02.08 / #翻译</span>
+						<a href="#">严肃的产品不必设计的那么严肃</a>
+				</li>	
 				<li>
-					<span class="data">09.10 / #翻译</span>
-					<a href="#">用户体验设计流程</a>
-				</li>
-				<li>
-					<span class="data">09.10 / #翻译</span>
-					<a href="#">用户体验设计流程</a>
-				</li>
+						<span class="data">02.08 / #翻译</span>
+						<a href="#">严肃的产品不必设计的那么严肃</a>
+				</li>	
 			</ul>
+			</div>
+			</div>
 		</section>
-		<footer class="commonWidth">
-				<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M170.667 21.3333L42.6667 64V192L85.3334 234.667L213.333 192V64L170.667 21.3333ZM138.667 53.3333L74.6667 74.6667V96L96 88.8889L96 152.889L117.333 145.778L117.333 81.7778L138.667 74.6667V53.3333Z"  class="color_tovi_brand"/>
-					<path d="M213.333 64L170.667 21.3333V149.333L213.333 192V64Z" fill="black" fill-opacity="0.2" style="mix-blend-mode:multiply"/>
-					<path d="M85.3334 234.667L42.6667 192L170.667 149.333L213.333 192L85.3334 234.667Z" fill="black" fill-opacity="0.4" style="mix-blend-mode:multiply"/>
-				</svg>
-				<nav>
-					<a href="#">Twitter</a>
-					<a href="#">Github</a>
-					<a href="#">Mail</a>
-				</nav>
-			</header>
+		</div>
+		<div class="row">
+		<footer class="col-md-8 col-md-offset-2">
+			<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M170.667 21.3333L42.6667 64V192L85.3334 234.667L213.333 192V64L170.667 21.3333ZM138.667 53.3333L74.6667 74.6667V96L96 88.8889L96 152.889L117.333 145.778L117.333 81.7778L138.667 74.6667V53.3333Z"  class="color_tovi_brand"/>
+				<path d="M213.333 64L170.667 21.3333V149.333L213.333 192V64Z" fill="black" fill-opacity="0.2" style="mix-blend-mode:multiply"/>
+				<path d="M85.3334 234.667L42.6667 192L170.667 149.333L213.333 192L85.3334 234.667Z" fill="black" fill-opacity="0.4" style="mix-blend-mode:multiply"/>
+			</svg>
+			<nav>
+				<a href="#">Twitter</a>
+				<a href="#">Github</a>
+				<a href="#">Mail</a>
+			</nav>
+		</footer>
+		</div>
   </body>
 </html>
