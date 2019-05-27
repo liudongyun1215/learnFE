@@ -134,6 +134,13 @@ footer nav a{
         margin-bottom:16px;
     }    
     .container{
-        padding: 0 32px;
+        padding: 0 24px;
+    }
+}
+
+/* lg */
+@media(min-width:1200px){
+    .container{
+        padding:0 110px;
     }
 }
