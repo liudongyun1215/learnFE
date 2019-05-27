@@ -19,7 +19,7 @@ body .container{
     justify-content:space-between;
     align-items:center;
     height: 96px;
-    /* background-color: #00FF0010; */
+    /* background-color: #0000FF08; */
     /* flex布局结束 */
 }
 
@@ -119,3 +119,25 @@ footer nav a{
     color: #001AFF;
 }
 
+/* xs */
+@media(max-width:481px){
+    .header .logo{
+        width:52px;
+        height:52px;
+    }
+
+    .header nav{
+        font-size: 16px;
+    }
+    
+    .header nav a{
+        margin:  0px 8px;
+    }
+    .top .name{
+        font-size:44px;
+    }
+    .top{
+        margin-bottom:16px;
+    }    
+
+}
