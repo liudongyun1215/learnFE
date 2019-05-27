@@ -6,12 +6,6 @@ body{
     font-family:-apple-system,'Microsoft Yahei', 'Noto Sans SC', sans-serif;
 }
 
-body .container{
-    padding-left: 20px;
-    padding-right:20px;
-    
-}
-
 .header{
     /* flex布局开始 */
     display:flex;
@@ -120,7 +114,7 @@ footer nav a{
 }
 
 /* xs */
-@media(max-width:481px){
+@media(max-width:769px){
     .header .logo{
         width:52px;
         height:52px;
@@ -139,5 +133,7 @@ footer nav a{
     .top{
         margin-bottom:16px;
     }    
-
+    .container{
+        padding: 0 32px;
+    }
 }
