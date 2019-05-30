@@ -27,14 +27,14 @@ svg.logo{
     fill: black;
     /* background:#0e1a25; */
     transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
-
 }
 
 svg.logo:hover{
     fill: black;
     /* background:black; */
-    transform: scale(1.2);
+    transform: rotate(10deg) scale(1.2); 
     transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
+    
 }
 
 .header nav{
@@ -96,7 +96,7 @@ svg.tv_icon{
 svg.tv_icon:hover{
     fill: #001AFF;
     /* background:black; */
-    transform: scale(1.1);
+    transform: scale(1.2) rotate(10deg);
     transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
 }
 
