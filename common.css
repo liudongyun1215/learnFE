@@ -17,10 +17,24 @@ body{
     /* flex布局结束 */
 }
 
-.header .logo{
+.header.logo{
     width:64px;
     height:64px;
     margin-left: -12px;
+}
+
+svg.logo{
+    fill: black;
+    /* background:#0e1a25; */
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
+
+}
+
+svg.logo:hover{
+    fill: black;
+    /* background:black; */
+    transform: scale(1.2);
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
 }
 
 .header nav{
@@ -68,7 +82,22 @@ footer .logo{
 
 footer nav a{
     margin-left: 16px;
-    color: black
+    text-decoration: none;
+}
+
+svg.tv_icon{
+    width:24px;
+    height:auto;
+    fill: black;
+    /* background:#0e1a25; */
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
+}
+
+svg.tv_icon:hover{
+    fill: #001AFF;
+    /* background:black; */
+    transform: scale(1.1);
+    transition: background 0.2s, transform 0.2s ease-out, fill 0.2s;
 }
 
 
@@ -105,6 +134,8 @@ footer nav a{
     margin-right: 12px;
 }
 
+
+
 .top .subnav a:hover{
     color:#001AFF;
 }
@@ -112,6 +143,8 @@ footer nav a{
 .top .subnav .current{
     color: #001AFF;
 }
+
+
 
 /* xs */
 @media(max-width:769px){
