@@ -102,3 +102,50 @@ ul, ol{
 em {
 	font-weight: 700;
 }
+
+
+/* xs */
+@media(max-width:768px){
+	.mainheading {
+		font-size: 28px;
+		font-weight: 600;
+		margin-bottom: 16px;
+		letter-spacing: .03em;
+		line-height: 1.2;
+		margin-top: 64px;
+	}
+}
+
+/* xs */
+@media(min-width:768px){
+	.mainheading {
+		font-size: 32px;
+		font-weight: 600;
+		margin-bottom: 16px;
+		letter-spacing: .03em;
+		line-height: 1.2;
+		margin-top: 64px;
+	}
+}
+
+@media(min-width:992px){
+	.mainheading {
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 16px;
+		letter-spacing: .03em;
+		line-height: 1.2;
+		margin-top: 64px;
+	}
+}
+
+@media(min-width:1200px){
+	.mainheading {
+		font-size: 40px;
+		font-weight: 600;
+		margin-bottom: 16px;
+		letter-spacing: .03em;
+		line-height: 1.2;
+		margin-top: 64px;
+	}
+}
