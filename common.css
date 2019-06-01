@@ -1,9 +1,19 @@
+:root {
+    --sys-sans: -apple-system,BlinkMacSystemFont,"Helvetica Neue";
+    --cjk-sans:  "PingFang SC","Hiragino Sans GB","Droid Sans Fallback","Microsoft YaHei";
+}
 .color_tovi_brand{
     fill: #333;
 }
 /* 'SimHei' */
 body{
-    font-family:-apple-system,'Microsoft Yahei', 'Noto Sans SC', sans-serif;
+    /* font-family:-apple-system,'Microsoft Yahei',sans-serif; */
+    line-height: 1.62;
+    font-family: "Droid Serif",var(--cjk-sans),sans-serif;
+    font: 400 18px/1.42 var(--sys-sans),var(--cjk-sans),sans-serif;
+    color: rgba(0,0,0,.86);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 .header{
@@ -46,6 +56,7 @@ svg.logo:hover{
         padding: 8px 0px;
         margin:  0px 10px;
         color: black;
+
 }
 
 nav a:hover{
@@ -144,7 +155,9 @@ svg.tv_icon:hover{
     color: #001AFF;
 }
 
-
+.svgIcon {
+	vertical-align:middle;
+}
 
 /* xs */
 @media(max-width:769px){
@@ -174,6 +187,6 @@ svg.tv_icon:hover{
 /* lg */
 @media(min-width:1200px){
     .container{
-        padding:0 110px;
+        padding:0 48px;
     }
 }
