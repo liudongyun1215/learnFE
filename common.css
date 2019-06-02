@@ -8,10 +8,10 @@
 /* 'SimHei' */
 body{
     /* font-family:-apple-system,'Microsoft Yahei',sans-serif; */
-    line-height: 1.62;
+    line-height: 1.7;
     font-family: "Droid Serif",var(--cjk-sans),sans-serif;
     font: 400 18px/1.42 var(--sys-sans),var(--cjk-sans),sans-serif;
-    color: rgba(0,0,0,.86);
+    color: rgba(0,0,0,.9);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -27,10 +27,8 @@ body{
     /* flex布局结束 */
 }
 
-.header.logo{
-    width:64px;
-    height:64px;
-    margin-left: -12px;
+.header .logo{
+    margin-left: -6px;
 }
 
 svg.logo{
@@ -50,6 +48,7 @@ svg.logo:hover{
 .header nav{
     font-size: 18px;
     font-weight: 500;
+    margin-right: -8px; 
 }
 
 .header nav a{
@@ -162,8 +161,8 @@ svg.tv_icon:hover{
 /* xs */
 @media(max-width:769px){
     .header .logo{
-        width:52px;
-        height:52px;
+        width:48px;
+        height:48px;
     }
 
     .header nav{
@@ -174,7 +173,7 @@ svg.tv_icon:hover{
         margin:  0px 8px;
     }
     .top .name{
-        font-size:44px;
+        font-size:36px;
     }
     .top{
         margin-bottom:16px;
@@ -185,8 +184,8 @@ svg.tv_icon:hover{
 }
 
 /* lg */
-@media(min-width:1200px){
+/* @media(min-width:1200px){
     .container{
         padding:0 48px;
     }
-}
+} */
