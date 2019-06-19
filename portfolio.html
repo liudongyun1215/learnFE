@@ -24,17 +24,17 @@
 		<link rel="stylesheet" href="./common.css">
     <style>
       body{
-        background-color: #F1F1F1;
+        background-color: #f1f1f1;
       }
       .cata{
         margin-top:24px;
         font-size:60px;
 				color:white;
-				font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 				line-height: 1;
 				text-transform: uppercase;
 				word-wrap: break-word;
-				font-size:60px;
+        font-size:60px;
+        font-weight:900;
       }
 
 			.workGrid img{
@@ -75,10 +75,21 @@
         }
 			}
 
+			@media(max-width:769px){
+        .cata{
+					font-size:36px;
+					/* margin-bottom: 12px;
+					color: rgba(0, 0, 0, 0.15);
+					padding-bottom: 12px;
+					border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
+				}
+			}
+
 
     </style>
 	</head>
   <body class="container">
+  
     <header class="header">
       <!-- <img src="./images/logo-tovizhong.png" class="logo"> -->
       <!-- <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 256 256" fill="none" class="logo">
@@ -100,101 +111,65 @@
       <nav>
         <a href="./index.html">博客</a>
         <a href="./portfolio.html" class="current">作品集</a>
-        <a href="./sideprojects.html">小项目</a>
+        <!-- <a href="./sideprojects.html">小项目</a> -->
         <a href="./about.html">关于</a>
       </nav>
     </header>
 
     <div class="row">
     <section class="top col-md-8 col-md-offset-2">
-      <div class="name">Tovi's<br/>Portfolio</div>
-      <nav class="subnav">
+      <div class="name">Projects &<br/>portfolio</div>
+			<p class="intro">- 迷你项目：平时做的一些 Side Projects<br/>
+        - 挑选作品集：一些动效、界面、图标</p>
+
+      <!-- <nav class="subnav">
         <a href="#" class="current">All</a>
         <a href="#">App Design</a>
         <a href="#">Web Design</a>
         <a href="#">Motion</a>
         <a href="#">Icon</a>
-      </nav>      
+      </nav>       -->
     </section>
     </div>
     <!-- 2018年份 -->
     <div class="row">
       <section class="col-md-8 col-md-offset-2 cata">
-        <p>2018</p>
+        <p>迷你项目</p>
       </section>
     </div>
 
     <ul class="workGrid list-unstyled row">
       <li class="col-md-4 col-sm-4 col-lg-4">
         <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
+        <img src="./portfolio/images/cover_color_mix.jpg"><br>
+        <p>Color Mix</p>
+        <span class="data">收集和组合独特的颜色、渐变和形状</span>
         </a>
       </li>
       <li class="col-md-4 col-sm-4 col-lg-4">
         <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
+        <img src="./portfolio/images/cover_app_icon.jpg"><br>
+        <p>应用图标集</p>
+        <span class="data">一些练习、正式项目中的应用图标</span>
         </a>
       </li>
       <li class="col-md-4 col-sm-4 col-lg-4">
         <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
+        <img src="./portfolio/images/cover_boomarks.jpg"><br>
         <p>name</p>
-        <span class="data">02.08 / #翻译</span>
-        </a>
-      </li>
-      <li class="col-md-4 col-sm-4 col-lg-4">
-        <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
+        <span class="data">常用书签</span>
         </a>
       </li>
 
-      <li class="col-md-4 col-sm-4 col-lg-4">
-        <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
-        </a>
-      </li>
-      <li class="col-md-4 col-sm-4 col-lg-4">
-        <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
-        </a>
-      </li>
-      <li class="col-md-4 col-sm-4 col-lg-4">
-        <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
-        </a>
-      </li>
-      <li class="col-md-4 col-sm-4 col-lg-4">
-        <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
-        </a>
-      </li>
-      <li class="col-md-4 col-sm-4 col-lg-4">
-        <a href="#">  
-        <img src="./images/thumbnail_works.png"><br>
-        <p>name</p>
-        <span class="data">02.08 / #翻译</span>
-        </a>
-      </li>
+
+
       </ul>
   
     <!-- 2018年份 -->
     <div class="row">
+
         <section class="col-md-8 col-md-offset-2 cata">
-          <p>2018</p>
+          <p>作品集</p>
         </section>
       </div>
   

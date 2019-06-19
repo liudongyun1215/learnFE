@@ -53,13 +53,14 @@ svg.logo:hover{
 
 .header nav a{
         padding: 8px 0px;
-        margin:  0px 10px;
+        margin:  0px 16px;
         color: black;
 
 }
 
 nav a:hover{
     color:#001AFF;
+    text-decoration: none;
 }
 
 .header nav .current{
