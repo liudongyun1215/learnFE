@@ -117,7 +117,7 @@ svg.tv_icon:hover{
     margin-bottom:40px;
 }
 
-.top .name{
+.top .name, .cata{
     font-family: 'Biryani', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 1.2;
     text-transform: uppercase;
@@ -125,8 +125,10 @@ svg.tv_icon:hover{
     font-size:60px;
 }
 
+
+
 .top .intro{
-    color:rgba(0, 0, 0, 0.35);
+    color:rgba(0, 0, 0, 1);
     font-size:16px;
     line-height: 1.5;
     margin-top: 4px;
